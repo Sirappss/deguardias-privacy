@@ -1,218 +1,155 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidad — De Guardias</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ <!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Política de Privacidad — De Guardias</title>
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                     Helvetica, Arial, sans-serif;
+        background: #f9f9f9; color: #1a1a1a; line-height: 1.7; padding: 2rem 1rem;
+      }
+      .card {
+        max-width: 720px; margin: 0 auto; background: #ffffff;
+        border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,.08); padding: 2.5rem 2rem;
+      }
+      header {
+        display: flex; align-items: center; gap: 1rem;
+        margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e5e5e5;
+      }
+      header h1 { font-size: 1.4rem; font-weight: 700; color: #2563eb; }
+      header p { font-size: 0.82rem; color: #6b7280; margin-top: 2px; }
+      h2 { font-size: 1rem; font-weight: 700; color: #111827; margin: 1.8rem 0 0.5rem; }
+      p, li { font-size: 0.93rem; color: #374151; }
+      ul { padding-left: 1.4rem; margin-top: 0.4rem; }
+      li { margin-bottom: 0.3rem; }
+      a { color: #2563eb; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      footer {
+        margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid #e5e5e5;
+        font-size: 0.82rem; color: #9ca3af; text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <div>
+          <h1>Política de Privacidad</h1>
+          <p>De Guardias · Última actualización: abril de 2025</p>
+        </div>
+      </header>
 
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                   Helvetica, Arial, sans-serif;
-      background: #f9f9f9;
-      color: #1a1a1a;
-      line-height: 1.7;
-      padding: 2rem 1rem;
-    }
+      <h2>1. Responsable</h2>
+      <p>
+        <strong>De Guardias</strong> es una aplicación desarrollada por
+        <strong>SirAppsDev</strong>. Si tienes cualquier duda sobre esta
+        política, puedes contactar en
+        <a href="mailto:sirappsdev@gmail.com">sirappsdev@gmail.com</a>.
+      </p>
 
-    .card {
-      max-width: 720px;
-      margin: 0 auto;
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,.08);
-      padding: 2.5rem 2rem;
-    }
+      <h2>2. Datos que recopilamos</h2>
+      <p>La app diferencia dos modos de uso:</p>
+      <ul>
+        <li>
+          <strong>Modo invitado:</strong> todos tus datos (tipos de turno, reglas
+          de periodicidad y eventos manuales) se guardan únicamente en tu
+          dispositivo mediante una base de datos local. No se envía ningún dato
+          a servidores externos.
+        </li>
+        <li>
+          <strong>Cuenta registrada:</strong> si decides crear una cuenta,
+          recopilamos tu dirección de correo electrónico — o los datos básicos
+          de tu cuenta de Google si usas "Continuar con Google" — a través de
+          Firebase Authentication. Los datos de tus turnos se sincronizan
+          con Firebase Firestore para que puedas restaurarlos si cambias de
+          dispositivo.
+        </li>
+      </ul>
 
-    header {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin-bottom: 2rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid #e5e5e5;
-    }
+      <h2>3. Finalidad del tratamiento</h2>
+      <ul>
+        <li>Identificación de tu cuenta y acceso seguro a la app.</li>
+        <li>Copia de seguridad en la nube de tus datos de turnos.</li>
+        <li>Sincronización entre dispositivos.</li>
+        <li>Mostrarte publicidad relevante a través de Google AdMob.</li>
+      </ul>
 
-    header img {
-      width: 56px;
-      height: 56px;
-      border-radius: 12px;
-    }
+      <h2>4. Publicidad (Google AdMob)</h2>
+      <p>
+        La app muestra anuncios proporcionados por Google AdMob. AdMob puede
+        recopilar identificadores publicitarios del dispositivo para mostrar
+        anuncios personalizados, de acuerdo con la
+        <a href="https://policies.google.com/privacy" target="_blank"
+          rel="noopener">política de privacidad de Google</a>.
+      </p>
 
-    header h1 {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #2563eb;
-    }
+      <h2>5. Base legal</h2>
+      <p>
+        El tratamiento de datos se basa en el consentimiento que otorgas al
+        crear una cuenta o al aceptar el uso de la app. Puedes retirar ese
+        consentimiento en cualquier momento eliminando tu cuenta desde Ajustes.
+      </p>
 
-    header p {
-      font-size: 0.82rem;
-      color: #6b7280;
-      margin-top: 2px;
-    }
+      <h2>6. Cesión de datos a terceros</h2>
+      <p>No vendemos ni cedemos tus datos personales a terceros. Los únicos
+      proveedores externos que intervienen son:</p>
+      <ul>
+        <li>
+          <strong>Google Firebase</strong> (Authentication y Firestore):
+          almacenamiento seguro de credenciales y datos de turnos.
+        </li>
+        <li><strong>Google AdMob:</strong> gestión de publicidad.</li>
+      </ul>
+      <p>
+        Ambos servicios operan bajo la
+        <a href="https://policies.google.com/privacy" target="_blank"
+          rel="noopener">política de privacidad de Google</a>.
+      </p>
 
-    h2 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #111827;
-      margin: 1.8rem 0 0.5rem;
-    }
+      <h2>7. Transferencias internacionales</h2>
+      <p>
+        Google Firebase y AdMob pueden procesar datos en servidores fuera del
+        Espacio Económico Europeo. Google aplica cláusulas contractuales tipo
+        aprobadas por la Comisión Europea como garantía de protección.
+      </p>
 
-    p, li {
-      font-size: 0.93rem;
-      color: #374151;
-    }
+      <h2>8. Conservación de datos</h2>
+      <p>
+        Tus datos se conservan mientras mantengas la cuenta activa. Si eliminas
+        tu cuenta, los datos almacenados en Firestore se borran de forma
+        permanente. Los datos locales en tu dispositivo pueden eliminarse
+        desinstalando la app.
+      </p>
 
-    ul {
-      padding-left: 1.4rem;
-      margin-top: 0.4rem;
-    }
+      <h2>9. Tus derechos</h2>
+      <p>
+        Tienes derecho a acceder, rectificar y suprimir tus datos, así como a
+        la portabilidad y a oponerte al tratamiento. Puedes ejercerlos
+        contactando en
+        <a href="mailto:sirappsdev@gmail.com">sirappsdev@gmail.com</a>
+        o eliminando tu cuenta directamente desde la sección "Mi cuenta" en Ajustes.
+      </p>
 
-    li { margin-bottom: 0.3rem; }
+      <h2>10. Menores de edad</h2>
+      <p>
+        De Guardias no está dirigida a menores de 16 años y no recopila
+        conscientemente datos de menores.
+      </p>
 
-    a { color: #2563eb; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+      <h2>11. Cambios en esta política</h2>
+      <p>
+        Podemos actualizar esta política ocasionalmente. Te notificaremos
+        cualquier cambio relevante mediante una actualización de la app.
+        La fecha de la última revisión aparece al inicio de este documento.
+      </p>
 
-    footer {
-      margin-top: 2.5rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid #e5e5e5;
-      font-size: 0.82rem;
-      color: #9ca3af;
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <div class="card">
-
-    <header>
-      <div>
-        <h1>Política de Privacidad</h1>
-        <p>De Guardias · Última actualización: abril de 2025</p>
-      </div>
-    </header>
-
-    <h2>1. Responsable</h2>
-    <p>
-      <strong>De Guardias</strong> es una aplicación desarrollada por
-      <strong>SirAppsDev</strong>. Si tienes cualquier duda sobre esta
-      política, puedes contactar en
-      <a href="mailto:sirappsdev@gmail.com">sirappsdev@gmail.com</a>.
-    </p>
-
-    <h2>2. Datos que recopilamos</h2>
-    <p>La app diferencia dos modos de uso:</p>
-    <ul>
-      <li>
-        <strong>Modo invitado:</strong> todos tus datos (tipos de turno, reglas
-        de periodicidad y eventos manuales) se guardan únicamente en tu
-        dispositivo mediante una base de datos local. No se envía ningún dato
-        a servidores externos.
-      </li>
-      <li>
-        <strong>Cuenta registrada:</strong> si decides crear una cuenta,
-        recopilamos tu dirección de correo electrónico — o los datos básicos
-        de tu cuenta de Google si usas "Continuar con Google" — a través de
-        Firebase Authentication. Los datos de tus turnos se sincronizan
-        con Firebase Firestore para que puedas restaurarlos si cambias de
-        dispositivo.
-      </li>
-    </ul>
-
-    <h2>3. Finalidad del tratamiento</h2>
-    <ul>
-      <li>Identificación de tu cuenta y acceso seguro a la app.</li>
-      <li>Copia de seguridad en la nube de tus datos de turnos.</li>
-      <li>Sincronización entre dispositivos.</li>
-      <li>
-        Mostrarte publicidad relevante (solo usuarios no Pro) a través de
-        Google AdMob.
-      </li>
-    </ul>
-
-    <h2>4. Publicidad (Google AdMob)</h2>
-    <p>
-      Los usuarios que no tienen la modalidad Pro ven anuncios proporcionados
-      por Google AdMob. AdMob puede recopilar identificadores publicitarios
-      del dispositivo para mostrar anuncios personalizados, de acuerdo con la
-      <a href="https://policies.google.com/privacy" target="_blank"
-        rel="noopener">política de privacidad de Google</a>.
-      Los usuarios Pro no reciben ningún anuncio.
-    </p>
-
-    <h2>5. Base legal</h2>
-    <p>
-      El tratamiento de datos se basa en el consentimiento que otorgas al
-      crear una cuenta o al aceptar el uso de la app. Puedes retirar ese
-      consentimiento en cualquier momento eliminando tu cuenta desde Ajustes.
-    </p>
-
-    <h2>6. Cesión de datos a terceros</h2>
-    <p>
-      No vendemos ni cedemos tus datos personales a terceros. Los únicos
-      proveedores externos que intervienen son:
-    </p>
-    <ul>
-      <li>
-        <strong>Google Firebase</strong> (Authentication y Firestore):
-        almacenamiento seguro de credenciales y datos de turnos.
-      </li>
-      <li>
-        <strong>Google AdMob:</strong> gestión de publicidad para usuarios
-        no Pro.
-      </li>
-    </ul>
-    <p>
-      Ambos servicios operan bajo la
-      <a href="https://policies.google.com/privacy" target="_blank"
-        rel="noopener">política de privacidad de Google</a>.
-    </p>
-
-    <h2>7. Transferencias internacionales</h2>
-    <p>
-      Google Firebase y AdMob pueden procesar datos en servidores fuera del
-      Espacio Económico Europeo. Google aplica cláusulas contractuales tipo
-      aprobadas por la Comisión Europea como garantía de protección.
-    </p>
-
-    <h2>8. Conservación de datos</h2>
-    <p>
-      Tus datos se conservan mientras mantengas la cuenta activa. Si eliminas
-      tu cuenta, los datos almacenados en Firestore se borran de forma
-      permanente. Los datos locales en tu dispositivo pueden eliminarse
-      desinstalando la app.
-    </p>
-
-    <h2>9. Tus derechos</h2>
-    <p>
-      Tienes derecho a acceder, rectificar y suprimir tus datos, así como a
-      la portabilidad y a oponerte al tratamiento. Puedes ejercerlos
-      contactando en
-      <a href="mailto:sirappsdev@gmail.com">sirappsdev@gmail.com</a>
-      o eliminando tu cuenta directamente desde la sección "Mi cuenta"
-      en Ajustes.
-    </p>
-
-    <h2>10. Menores de edad</h2>
-    <p>
-      De Guardias no está dirigida a menores de 16 años y no recopila
-      conscientemente datos de menores.
-    </p>
-
-    <h2>11. Cambios en esta política</h2>
-    <p>
-      Podemos actualizar esta política ocasionalmente. Te notificaremos
-      cualquier cambio relevante mediante una actualización de la app.
-      La fecha de la última revisión aparece al inicio de este documento.
-    </p>
-
-    <footer>
-      SirAppsDev ·
-      <a href="mailto:sirappsdev@gmail.com">sirappsdev@gmail.com</a>
-    </footer>
-
-  </div>
-</body>
-</html>
+      <footer>
+        SirAppsDev ·
+        <a href="mailto:sirappsdev@gmail.com">sirappsdev@gmail.com</a>
+      </footer>
+    </div>
+  </body>
+  </html>
